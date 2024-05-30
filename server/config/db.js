@@ -14,7 +14,7 @@ const envPath = path.resolve(__dirname, "../../.env"); // Adjust the path as nee
 dotenv.config({ path: envPath });
 
 const db = new pg.Client({
-  connectionString: process.env.POSTGRES_URL,
+  connectionString: process.env.POSTGRES_URL_URL,
 });
 
 export default db;
